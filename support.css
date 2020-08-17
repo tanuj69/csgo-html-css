@@ -1,0 +1,82 @@
+.padding10{
+    padding: 10px;
+}
+
+.container-good{
+    background-image: linear-gradient(to bottom right, white, #ffdede);
+}
+
+.padding10{
+    position: relative;
+    background-color: #d3d3d3;
+    border: solid black 1px;
+    margin-bottom: 5px;
+}
+
+.padding10 .content{
+    overflow-y: hidden;
+    height: 0px;
+}
+
+.padding10> input[type="checkbox"]:checked ~.content {
+    height: auto;
+    overflow-y: visible;
+}
+
+.padding10> input[type="checkbox"]{
+    opacity: 0;
+    position: absolute;
+    width:100%;
+}
+
+.padding10> input[type="checkbox"]:checked~label{
+    font-size: 120%;
+}
+
+.post-queries{
+    background-color: rgb(254, 197, 229);
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.form-c{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#t1{
+    width: 80%;
+    height: 150px;
+    border-radius: 12px;
+}
+
+#t1,#name,#email{
+    background-color: rgb(254, 197, 229);
+    margin: auto;
+}
+#email,#name{
+     border: 0px;
+    border-bottom: solid black 1px;
+    height: 30px;
+}
+
+#email:focus,#name:focus,#t1:focus{
+    outline: none;
+}
+
+#send{
+    align-self: center;
+    margin: auto;
+    border: solid black 1px;
+    padding: 10px 15px 10px 15px;
+    background-color:  rgb(254,197,229);
+}
+
+#send:hover{
+    background-color:  hotpink;
+    border-radius: 30%;
+}
